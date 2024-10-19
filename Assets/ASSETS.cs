@@ -7,7 +7,11 @@ using UnityEngine;
 //cloud sprite texture:https://www.vecteezy.com/png/12376071-realistic-cumulus-cloud
 // naruto sprite: https://nohat.cc/f/uzumaki-naruto-naruto-ultimate-ninja-storm-naruto-uzumaki-sasuke-uchiha-kakashi-hatake-naruto-shippuden-ultimate-ninja-storm-4-naruto-cartoon-fictional-character-naruto-png/compngwingbbaam-202112191501.html 
 //rasengan sprite: https://www.deviantart.com/boltanim/art/Naruto-Rasengan-sprite-Effects-Sprite-Sheet-NZC-989930932
-//rasengan sound:https://www.youtube.com/watch?v=qODByY9FJto 
+//rasengan sound:https://www.youtube.com/watch?v=qODByY9FJto
+//gaara sprite: https://www.pngegg.com/en/png-kobhw/download
+//sand sprite: https://www.deviantart.com/yamato2017/art/sand-jutsu-Gaara01-1096039701
+//gojo: https://www.deviantart.com/tomugii/art/gojo-satoru-chibi-fanart-876092352
+//yippee: https://freesound.org/people/Higgs01/sounds/430925/ 
 public class ASSETS : MonoBehaviour
 {
     // Start is called before the first frame update

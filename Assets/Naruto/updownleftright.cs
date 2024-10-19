@@ -8,6 +8,8 @@ public class updownmove : MonoBehaviour
     [SerializeField] float Speed = 2f;
     [SerializeField] float Ymin = -7f; // lower boundary 
     [SerializeField] float Ymax = 7f; //upper boundary
+    [SerializeField] float Xmin = -7.7f;
+    [SerializeField] float Xmax = -3.2f;
     [SerializeField] GameObject rasengyspritePrefab; //
     //where the rasengan if coming from off naruto
     [SerializeField] float rasengy_x_offset = 0f;
@@ -39,8 +41,18 @@ public class updownmove : MonoBehaviour
         {
             transform.position = new Vector3(transform.position.x, Ymin, transform.position.z);
         }
-       
-        if (Input.GetKeyDown(KeyCode.Space))  // instatiate rasengan
+        // boundary outside Xmax
+        if (transform.position.x > Xmax)
+        {
+            transform.position = new Vector3(Xmax, transform.position.y, transform.position.z);
+        }
+        //boundary outside Xmin
+        if (transform.position.x < Xmin)
+        {
+            transform.position = new Vector3(Xmin, transform.position.y, transform.position.z);
+        }
+
+        if (Input.GetButtonDown("Fire1"))  // instatiate rasengan
         {
             GameObject obj;
             obj = Instantiate(rasengyspritePrefab);
